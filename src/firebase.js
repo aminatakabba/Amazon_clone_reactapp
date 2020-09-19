@@ -2,15 +2,15 @@ import firebase from 'firebase';
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAX35QJ5FCmL5KaMo9mkZ6tlyBsMbGM9YU",
-    authDomain: "clone-reactapp.firebaseapp.com",
-    databaseURL: "https://clone-reactapp.firebaseio.com",
-    projectId: "clone-reactapp",
-    storageBucket: "clone-reactapp.appspot.com",
-    messagingSenderId: "193266789680",
-    appId: "1:193266789680:web:96bcf31743270e47056cf5",
-    measurementId: "G-1FVKZC40XG"
-};
+    apiKey: "AIzaSyDc_MfoOUh-WnCC1cIHzlgC9VVOpTQipc0",
+    authDomain: "clone-792ac.firebaseapp.com",
+    databaseURL: "https://clone-792ac.firebaseio.com",
+    projectId: "clone-792ac",
+    storageBucket: "clone-792ac.appspot.com",
+    messagingSenderId: "248672385971",
+    appId: "1:248672385971:web:0c2e29f6c5d65ccb7329c6",
+    measurementId: "G-NDXQ2EMGC6"
+  };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 
