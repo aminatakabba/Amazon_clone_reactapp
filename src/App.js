@@ -7,6 +7,12 @@ import Login from './Login';
 import { BrowserRouter  as Router, Switch, Route } from 'react-router-dom'; 
 import { auth } from './firebase';
 import { useStateValue } from './StateProvider'
+import Payment from './Payment';
+import { loadStripe } from '@stripe/stripe-js';
+import { Elements } from '@stripe/react-stripe-js';
+import Orders from './Orders';
+
+const promise = loadStripe('pk_test_51HT9MOB7h7HPQOigxS3sLk3vGZCXDeGAPwoWR6VNzbQFP66ZYIk2deSKz9gnrPZk2E3yLzi91ZirPK7zt031aHcX00jbJ9BlHC');
 
 function App() {
 
@@ -35,10 +41,13 @@ function App() {
 
   return (
     <Router>
-      <div className="app">
-        {/* Header can be outside of the switch because it will always be rendered */}
-        
+      <div className="app">        
         <Switch>
+          {/* After processing orders */}
+          <Route>
+            <Orders />
+          </Route>
+
           {/* Login page */}
           <Route path="/login">
             <Login />
@@ -48,6 +57,14 @@ function App() {
           <Route path="/checkout">
             <Header />
             <Checkout />
+          </Route>
+
+          {/* Payment page */}
+          <Route path="/payment">
+            <Header />
+            <Elements stripe={promise}>
+              <Payment />
+            </Elements>
           </Route>
 
           {/* Home page */}
