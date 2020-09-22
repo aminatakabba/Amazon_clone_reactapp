@@ -23,3 +23,6 @@
 .payment__adress, .payment__items, .payment__details {
     flex: 0.8;
 }
+.payment__button {
+    background-color: lightgrey;
+}

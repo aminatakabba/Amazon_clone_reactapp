@@ -1,0 +1,44 @@
+.orders {
+    padding: 20px 80px;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    width: fit-content;
+}
+
+.orders > h1 {
+    margin: 30px 0 10px 0;
+}
+.orders__total {
+    color: #e2c26f;
+    font-size: 25px;
+    font-weight: 500;
+}
+button {
+    background-color: #f0c14b;
+    border: 1px solid;
+    border-color: #a88734 #9c7e31 #846a29;
+    /* float: right; */
+}
+.orders__adressParagraph {
+    color: rgb(105, 105, 105);
+    font-weight: 500;
+}
+.orders__adressBlackParagraph {
+    font-weight: 700;
+
+}
+.ordesrs__adress{
+    background-color: rgba(211, 211, 211, 0.562);
+    padding: 10px;
+    margin: 20px;
+}
+.orders__back {
+    width: max-content;
+    height: 30px;
+    margin-top: 20px;
+}
+.orders__button {
+    display: flex;
+    justify-content: center;
+}

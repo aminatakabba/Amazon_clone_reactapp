@@ -1,7 +1,9 @@
 const functions = require('firebase-functions');
 const express = require('express');
 const cors = require('cors');
-const stripe = require('stripe')('sk_test_51HT9MOB7h7HPQOigWkdKUxNkKczfhQGF54AikEAk9y1PxejQKvKGMcYtUUVYGe6k4nX5WMMDS6j9FYzwPW4VQYpu00N0ialyOG')
+const stripe = require('stripe')(
+  'sk_test_51HT9MOB7h7HPQOigWkdKUxNkKczfhQGF54AikEAk9y1PxejQKvKGMcYtUUVYGe6k4nX5WMMDS6j9FYzwPW4VQYpu00N0ialyOG'
+  )
 
 // API
 
@@ -34,5 +36,5 @@ app.post("/payments/create", async (request, response) => {
 // - Listen command
 exports.api = functions.https.onRequest(app);
 
-// - Listen command
-exports.api = functions.https.onRequest(app)
+
+//sk_test_51HT9MOB7h7HPQOigWkdKUxNkKczfhQGF54AikEAk9y1PxejQKvKGMcYtUUVYGe6k4nX5WMMDS6j9FYzwPW4VQYpu00N0ialyOG

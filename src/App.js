@@ -44,7 +44,8 @@ function App() {
       <div className="app">        
         <Switch>
           {/* After processing orders */}
-          <Route>
+          <Route path="/orders">
+            <Header />
             <Orders />
           </Route>
 
