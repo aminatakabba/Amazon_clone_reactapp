@@ -3,8 +3,8 @@
 <a href="https://aminatakabba.github.io/Amazon_clone_reactapp/"target="_blank">Deployed site</a>
 
 <img src="./src/img/amazon_different screens.jpg">
-<img src="./src/img/amazon_ipad.png/>
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="./src/img/amazon_ipad.png/">
+
 
 ## Available Scripts
 
